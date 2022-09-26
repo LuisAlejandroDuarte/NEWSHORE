@@ -1,0 +1,24 @@
+Cargar el proyecto de back-end en visual studio.net C# en
+la carpeta
+back-end/NEWSHORE.sln
+
+Cargar el proyecto de front-end 
+front-end
+
+y correr el
+npm install
+ng serve
+
+cambiar la dirección de las APIS desde 
+enviroment.base_url
+
+Clave para entrar en el login
+UserName:admin
+Password:admin
+
+!!!!!GRACIAS!!!!!
+
+
+
+
+
