@@ -1,0 +1,64 @@
+
+<div class="wrapper wrapper-full-page">
+  <div class="page-header login-page header-filter" filter-color="black" style="background-size: cover; background-position: top center;">
+    <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 ml-auto mr-auto">
+          <form
+          [formGroup]="loginform"
+          id="login"
+          (ngSubmit)="login()"
+          class="form">
+            <div class="card card-login">
+              <div class="card-header card-header-rose text-center">
+                <h4 class="card-title">Iniciar</h4>
+              </div>
+              <div class="card-body ">
+                <span class="bmd-form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fa fa-user"></i>
+                      </span>
+                    </div>
+                    <input  class="form-control"
+                    type="text"
+                    placeholder="user"
+                    formControlName="userName"  >
+                  </div>
+                  <p class="col text-danger" *ngIf="vaidarCampo('userName')">Usuario no es válido</p>
+
+                </span>
+                <br/>
+                <span class="bmd-form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fa fa-lock"></i>
+                      </span>
+                    </div>
+                    <input
+                      type="password"
+                      placeholder="Clave"
+                      formControlName="password"
+                      class="form-control"
+                      placeholder="Clave...">
+                  </div>
+                  <p class="col text-danger" *ngIf="vaidarCampo('password')">La clave es requerida</p>
+                </span>
+              </div>
+              <div class="card-footer justify-content-center">
+                <button [disabled]="!loginform.valid" class="btn btn-info btn-lg btn-block text-uppercase btn-rounded" type="submit">Ingresar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+

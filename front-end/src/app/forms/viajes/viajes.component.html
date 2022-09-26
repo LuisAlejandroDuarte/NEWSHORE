@@ -1,0 +1,61 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" [formGroup]="formViaje">
+    <mat-card id="persona">
+        <mat-card-title>Seleccione el viaje</mat-card-title>
+            <div class="row" style="width: 95%;padding: 10px;">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xs-12">
+                    <h4>Origen</h4>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Origen</mat-label>
+                      <mat-select formControlName="sorigen">
+                        <mat-option *ngFor="let origen of listOrigen" [value]="origen" >
+                          {{origen}}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xs-12">
+                    <h4>Destino</h4>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Destino</mat-label>
+                      <mat-select  formControlName="sdestination">
+                        <mat-option *ngFor="let destination of listDestination" [value]="destination">
+                          {{destination}}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xs-12">
+                  <button mat-stroked-button color="primary">Buscar</button>
+              </div>
+            </div>            
+            <div class="row">
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xs-2">
+                <mat-form-field appearance="fill">
+                  <mat-label>Moneda</mat-label>
+                  <mat-select  formControlName="smoneda" (change)="onChangeMoneda()">
+                    <mat-option *ngFor="let moneda of listMonedas" [value]="moneda">
+                      {{moneda}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xs-12">
+                <table id="datatables"     class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+
+                </table>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xs-12">
+                <button type="button" mat-stroked-button color="primary" (click)="onSalir()" >Salir</button>
+              </div>
+            </div>
+    </mat-card>
+  </form>
+</div>
+
