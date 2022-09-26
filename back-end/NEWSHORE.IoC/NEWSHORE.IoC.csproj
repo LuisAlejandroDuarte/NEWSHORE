@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NEWSHORE.Controllers\NEWSHORE.Controllers.csproj" />
+    <ProjectReference Include="..\NEWSHORE.Presenter\NEWSHORE.Presenter.csproj" />
+    <ProjectReference Include="..\NEWSHORE.RepositoryEF\NEWSHORE.RepositoryEF.csproj" />
+    <ProjectReference Include="..\NEWSHORE.UseCases\NEWSHORE.UseCases.csproj" />
+  </ItemGroup>
+
+</Project>

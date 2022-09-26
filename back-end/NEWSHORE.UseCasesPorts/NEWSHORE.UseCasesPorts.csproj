@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SITRAEN.DTOs\NEWSHORE.DTOs.csproj" />
+    <ProjectReference Include="..\NEWSHORE.DTOs\NEWSHORE.DTOs.csproj" />
   </ItemGroup>
 
 </Project>

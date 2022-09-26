@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SITRAEN.Entities\NEWSHORE.Entities.csproj" />
-    <ProjectReference Include="..\SITRAEN.UseCasesPorts\NEWSHORE.UseCasesPorts.csproj" />
+    <ProjectReference Include="..\NEWSHORE.Entities\NEWSHORE.Entities.csproj" />
+    <ProjectReference Include="..\NEWSHORE.UseCasesPorts\NEWSHORE.UseCasesPorts.csproj" />
   </ItemGroup>
 
   <ItemGroup>

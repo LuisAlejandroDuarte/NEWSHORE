@@ -15,8 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SITRAEN.Controllers\NEWSHORE.Controllers.csproj" />
-    <ProjectReference Include="..\SITRAEN.IoC\NEWSHORE.IoC.csproj" />
+    <ProjectReference Include="..\NEWSHORE.IoC\NEWSHORE.IoC.csproj" />
   </ItemGroup>
 
 </Project>

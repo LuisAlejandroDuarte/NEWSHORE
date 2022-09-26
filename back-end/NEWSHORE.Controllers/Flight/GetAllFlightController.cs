@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
-using NEWSHORE.DTOs;
 using NEWSHORE.DTOs.Flight;
 using NEWSHORE.Presenter;
 using NEWSHORE.UseCasesPorts.Flight;
